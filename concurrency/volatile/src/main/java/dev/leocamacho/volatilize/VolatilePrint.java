@@ -3,9 +3,9 @@ package dev.leocamacho.volatilize;
 
 //Based on example of https://www.baeldung.com/java-volatile
 public class VolatilePrint {
-
+    //Enable volatile to avoid memory issues
     public static /*volatile*/ int number;
-    public static boolean ready;
+    public static /*volatile*/ boolean ready;
 
     public static class Reader extends Thread {
 
